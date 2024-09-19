@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simple Website</title>
+    <link rel="stylesheet" href="website.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Home</h2>
+        <p>This is the homepage of my website. Enjoy your stay!</p>
+    </section>
+
+    
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I’m a full-stack web developer with a background in both design and programming. I specialize in creating dynamic, responsive, and visually appealing websites. My passion for learning new technologies and trends helps me keep up-to-date with the latest developments in the web development field.</p>
+      <div class="skills">
+        <div class="skill">
+          <h3>HTML & CSS</h3>
+          <p>Experienced in creating responsive websites using HTML5 and CSS3 with clean and modular code.</p>
+        </div>
+        <div class="skill">
+          <h3>JavaScript</h3>
+          <p>Proficient in adding interactivity to web pages using vanilla JavaScript and modern ES6+ features.</p>
+        </div>
+        <div class="skill">
+          <h3>Node.js & Express</h3>
+          <p>Skilled in building backend APIs and handling server-side functionality with Node.js and Express.js.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>If you'd like to get in touch or work together on a project, feel free to reach out!</p>
+      <form id="contact-form">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 John Doe. All rights reserved.</p>
+    </div>
+  </footer>
+    <script src="website.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Bike Name Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Random Bike Name Generator</h1>
+    <button id="bikeBtn">Get a Bike Name</button>
+    <p id="bikeDisplay">Click the button to get a bike name!</p>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const bikeBtn = document.getElementById('bikeBtn');
+            const bikeDisplay = document.getElementById('bikeDisplay');
+
+            bikeBtn.addEventListener('click', function() {
+                // Fetching a random bike name from an API
+                fetch('https://mockapi.com/bikes/random')
+                    .then(response => response.json()) // Parsing the JSON response
+                    .then(data => {
+                        // Displaying the bike name on the webpage
+                        bikeDisplay.textContent = data.bikeName;
+                    })
+                    .catch(error => {
+                        // Handling errors
+                        bikeDisplay.textContent = 'Oops! Something went wrong. Please try again later.';
+                        console.error('Error fetching bike name:', error);
+                    });
+            });
+        });
+    </script>
+</body>
+</html>
+

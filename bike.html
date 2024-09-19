@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Bike Name </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Random Bike Name </h1>
+    <button id="bikeBtn">Get a Bike Name</button>
+    <p id="bikeDisplay">Click the button to get a random bike name!</p>
+
+    <script>
+     document.addEventListener('DOMContentLoaded', function() {
+        const bikeBtn = document.getElementById('bikeBtn');
+        const bikeDisplay = document.getElementById('bikeDisplay');
+    
+        // Array of random bike names
+        const bikeNames = [
+            'Yamaha YZF-R1',
+            'Ducati Panigale V4',
+            'Honda CBR1000RR',
+            'Kawasaki Ninja H2R',
+            'BMW S1000RR',
+            'Suzuki GSX-R1000',
+            'Aprilia RSV4',
+            'Triumph Daytona 675',
+            'KTM RC390',
+            'Harley-Davidson Fat Boy'
+        ];
+    
+        bikeBtn.addEventListener('click', function() {
+            // Get a random bike name from the array
+            const randomBike = bikeNames[Math.floor(Math.random() * bikeNames.length)];
+            
+            // Displaying the random bike name on the webpage
+            bikeDisplay.textContent = `Random Bike: ${randomBike}`;
+        });
+    });
+    </script>
+</body>
+</html>
