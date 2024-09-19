@@ -1,18 +1,19 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Simple Website</title>
+    <title>Bike Enthusiast Club</title>
     <link rel="stylesheet" href="website.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to My Website</h1>
+        <h1>Welcome to the Bike Enthusiast Club</h1>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#bikes">Bikes</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -20,49 +21,54 @@
 
     <section id="home">
         <h2>Home</h2>
-        <p>This is the homepage of my website. Enjoy your stay!</p>
+        <p>Welcome to the Bike Enthusiast Club! Discover, share, and learn everything about bikes.</p>
     </section>
 
-    
-  <section id="about">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>I’m a full-stack web developer with a background in both design and programming. I specialize in creating dynamic, responsive, and visually appealing websites. My passion for learning new technologies and trends helps me keep up-to-date with the latest developments in the web development field.</p>
-      <div class="skills">
-        <div class="skill">
-          <h3>HTML & CSS</h3>
-          <p>Experienced in creating responsive websites using HTML5 and CSS3 with clean and modular code.</p>
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We are passionate about all things bikes, from mountain bikes to road bikes. Our community shares a love for riding and exploring the latest trends in the biking world.</p>
         </div>
-        <div class="skill">
-          <h3>JavaScript</h3>
-          <p>Proficient in adding interactivity to web pages using vanilla JavaScript and modern ES6+ features.</p>
-        </div>
-        <div class="skill">
-          <h3>Node.js & Express</h3>
-          <p>Skilled in building backend APIs and handling server-side functionality with Node.js and Express.js.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="contact">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <p>If you'd like to get in touch or work together on a project, feel free to reach out!</p>
-      <form id="contact-form">
-        <input type="text" id="name" placeholder="Your Name" required>
-        <input type="email" id="email" placeholder="Your Email" required>
-        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
-        <button type="submit" class="btn">Send Message</button>
-      </form>
-    </div>
-  </section>
+    <section id="bikes">
+        <div class="container">
+            <h2>Our Favorite Bikes</h2>
+            <div class="bike-list">
+                <div class="bike">
+                    <h3>Mountain Bike</h3>
+                    <p>Perfect for off-road adventures, offering durability and shock absorption.</p>
+                </div>
+                <div class="bike">
+                    <h3>Road Bike</h3>
+                    <p>Designed for speed on smooth surfaces, ideal for long-distance rides.</p>
+                </div>
+                <div class="bike">
+                    <h3>Hybrid Bike</h3>
+                    <p>A versatile bike that combines the features of both road and mountain bikes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2024 John Doe. All rights reserved.</p>
-    </div>
-  </footer>
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you’d like to join our club or have any questions about bikes, feel free to reach out!</p>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Bike Enthusiast Club. All rights reserved.</p>
+        </div>
+    </footer>
     <script src="website.js"></script>
 </body>
 </html>
